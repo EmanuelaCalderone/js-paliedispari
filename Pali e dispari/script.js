@@ -10,8 +10,9 @@ let sceltaUtente = prompt("Scegli 'pari' o 'dispari'").toLocaleLowerCase();
 
 //creo il prompt per far inserire il numero all'utente
 let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
-if (numeroUtente > 5) {
+while (numeroUtente > 5) {
     alert("Devi inserire un numero tra 1 e 5");
+    numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"));
 }
 
 //genero un numero random per il computer
